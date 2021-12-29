@@ -10,6 +10,9 @@ const config = {
         storageBucket: process.env.REACT_APP_FIREBASE_STORAGEBUCKET,
         messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID,
         appId: process.env.REACT_APP_FIREBASE_APPID
+    },
+    cloudynari: {
+        url: process.env.REACT_APP_CLOUDYNARI_URL
     }
 }
 

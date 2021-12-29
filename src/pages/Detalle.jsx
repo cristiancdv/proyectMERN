@@ -23,7 +23,7 @@ function Detalle() {
       margin: ".75rem auto"
     }
   }
-  console.log(id);
+  // console.log(id);
 
   useEffect(() => {
     async function request() {

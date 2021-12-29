@@ -33,6 +33,7 @@ function ModificarProducto() {
     // console.log(image);
     if (check === true || image) {
       formData.append('imagen', image)
+      // console.log(image);
     }
     formData.append('titulo', data.titulo)
     formData.append('precio', data.precio)
@@ -77,7 +78,7 @@ function ModificarProducto() {
       }
     } catch (e) {
       const message = e.req
-      console.log(e);
+      // console.log(e);
       MySwal.fire({
         title: <p>{message}</p>,
         confirmButtonText: 'Aceptar',

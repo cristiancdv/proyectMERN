@@ -1,5 +1,5 @@
 import React from "react"
-
+import { cloudynari } from "../../config/config"
 const styles = {
     imagen: {
         maxWidth: "5rem"
@@ -11,7 +11,7 @@ const styles = {
 }
 function ProductoImagen(props) {
     const { datos } = props
-    // console.log(datos);
+
     if (datos === 'undefined') {
         return (
             <>
@@ -22,7 +22,7 @@ function ProductoImagen(props) {
         return (
             <>
 
-                <img alt="imagen no disponible" style={styles.imagen} src={datos}></img>
+                <img alt="imagen no disponible" style={styles.imagen} src={`${cloudynari.url}` + datos}></img>
 
             </>
         )
